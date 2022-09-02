@@ -112,6 +112,9 @@ header {
 .link.current {
   color: var(--accent-txt-color);
 }
+.contacts-icon {
+  fill: var(--secondary-txt-color);
+}
 .link-address:hover .contacts-icon,
 .link-address:focus .contacts-icon {
   fill: var(--accent-txt-color);
@@ -179,16 +182,6 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.list-qualities {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.list-qualities .item {
-  width: 270px;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -201,10 +194,16 @@ header {
   clip-path: inset(50%);
   margin: -1px;
 }
-.list-icons {
+
+.list-qualities {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
+.list-qualities .item {
+  width: 270px;
+}
+
 .icon-box {
   display: flex;
   justify-content: center;
@@ -215,12 +214,6 @@ header {
   height: 120px;
 
   background-color: var(--light-bg-color);
-}
-.icon-box > svg {
-  display: block;
-
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .title-qualities {
@@ -407,9 +400,14 @@ header {
   margin-top: 30px;
   margin-left: 30px;
 }
+.link-portfolio {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
-.card-potfolio:hover,
-.card-potfolio:focus {
+.link-portfolio:hover,
+.link-potfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -492,10 +490,10 @@ header {
 .container-footer {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .title-socials {
-  margin-top: 12px;
   margin-bottom: 20px;
 
   color: var(--light-txt-color);
